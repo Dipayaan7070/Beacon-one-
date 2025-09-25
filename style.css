@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+  --col-primary:#AA6AAA;
+  --col-secondary:#E5DCE5;
+  --col-balck:#18212D;
+  --col-white:#ffff;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ body {
+   margin: 0;
+   font-family: 'Arvo', Static;
+  
+ }
+
+ .navbar {
+   background-color: #f8f9fa;
+   padding: 1rem;
+   position: relative;
+   z-index: 1000;
+ }
+
+
+ .navbar-brand {
+   position: absolute;
+   top: -8px;
+   left: 1rem;
+   width: 200px;
+   max-width: 40%;
+   z-index: 2;
+   display: block;
+ }
+
+ .navbar-brand img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ 
+ .navbar-toggler {
+   border: none;
+   position: relative;
+   z-index: 2000 !important;
+   pointer-events: auto;
+ }
+
+ 
+ .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ }
+
+ 
+ .nav-link {
+   color: var(--col-balck) !important;
+   font-weight: 500;
+   transition: color .15s ease;
+ }
+
+ .nav-link:hover {
+   color: var(--col-primary) !important;
+   text-decoration: none;
+ }
+
+ .btn-contact {
+   border-radius: 20px;
+   padding: 6px 16px;
+   background-color: var(--col-secondary) !important;
+   color: #000;
+   font-weight: 500;
+   border: none;
+   transition: background-color .15s ease, color .15s ease;
+ }
+
+ .btn-contact:hover {
+   background-color: var(--col-primary) !important;
+   color: var(--col-white);
+   border: 1px solid black;
+ }
+
+
+
+ .banner-wrapper {
+   background-image:
+     url('image/Mask group (39).png'),
+     url('image/Mask\ group\ \(38\).png');
+   background-repeat: no-repeat, no-repeat;
+   background-position: center center, bottom center;
+   background-size: cover, cover;
+   border-radius: 30px 30px 0 0;
+   padding: 100px 20px 40px;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+ }
+
+
+
+ .banner-title {
+   font-size: 2.5rem;
+   font-weight: bold;
+ }
+
+ .banner-text {
+   max-width: 700px;
+   margin: 20px auto;
+   font-size: 1rem;
+   color: #555;
+ }
+
+ .btn-contact {
+   background-color: var(--col-primary) !important;
+   color: var(--col-white);
+   padding: 10px 25px;
+   border-radius: 30px;
+   font-weight: 500;
+   border: none;
+ }
+
+ .btn-contact:hover {
+   background-color: wheat !important;
+   color: black;
+ }
+
+ .banner-image {
+   margin-top: 40px;
+   border: 6px solid var(--col-white);
+   border-radius: 20px;
+   overflow: hidden;
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .banner-image img {
+   width: 100%;
+   display: block;
+ }
+
+ .img-foreground {
+   position: relative;
+   z-index: 3;
+   max-width: 900px;
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   border: 6px solid var(--col-white);
+   border-radius: 20px;
+ }
+
+ .bg-purple {
+   background-color: var(--col-primary);
+ }
+ 
+ .custom-card img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 8px;
+ }
+
+ .custom-card a:hover {
+   text-decoration: underline;
+ }
+ .btn-primary{
+  background-color: var(--col-primary);
+ }
+ .btn-primary:hover{
+  background-color: var(--col-secondary);
+  color: var(--col-balck);
+  border: 1px solid var(--col-balck) !important;
+ }
+
+ .testimonials-section {
+   padding: 80px 0;
+   overflow: hidden;
+ }
+
+ .testimonial-badge {
+   display: inline-block;
+   background-color: #f0eefc;
+   color: #5841d4;
+   padding: 6px 15px;
+   border-radius: 20px;
+   font-size: 14px;
+   font-weight: 500;
+ }
+
+ .testimonials-section h2 {
+   font-family: 'Lora', serif;
+   font-size: 2.8rem;
+   font-weight: 600;
+   color: #333;
+   margin-top: 1rem;
+ }
+ 
+ #testimonialCarousel {
+   padding: 40px 0;
+ }
+
+ .carousel-item {
+   
+   display: none;
+   text-align: center;
+   transition: transform .6s ease-in-out;
+ }
+
+ .carousel-item.active {
+   display: block;
+ }
+
+ 
+ .testimonial-pfp-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   margin-bottom: 30px;
+ }
+
+ .testimonial-pfp {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   object-fit: cover;
+   filter: grayscale(100%);
+   transform: scale(0.8);
+   opacity: 0.5;
+   transition: all 0.4s ease;
+ }
+
+
+ .testimonial-pfp.active {
+   width: 90px;
+   height: 90px;
+   filter: grayscale(0%);
+   transform: scale(1);
+   opacity: 1;
+   border: 4px solid #fff;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ .testimonial-content {
+   max-width: 650px;
+   margin: 0 auto;
+ }
+
+ .testimonial-content p {
+   font-size: 1.1rem;
+   line-height: 1.7;
+   color: #666;
+ }
+
+ .testimonial-author {
+   font-weight: 600;
+   color: #333;
+   margin-top: 20px;
+ }
+
+ .testimonial-author-title {
+   font-size: 0.9rem;
+   color: #888;
+ }
+
+
+ .carousel-control-prev,
+ .carousel-control-next {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   top: 50%;
+   transform: translateY(-50%);
+   opacity: 1;
+ }
+
+ .carousel-control-prev {
+   left: 0;
+   background-color: #fff;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .carousel-control-next {
+   right: 0;
+   background-color: var(--col-primary);
+   
+ }
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+   width: 2rem;
+   height: 2rem;
+ }
+
+ .carousel-control-prev-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237e57c2'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+ }
+
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+ }
+
+
+ .contact-section {
+   background-color: #af969c;
+   color: white;
+   padding: 3rem 2rem;
+   margin-bottom: -100px;
+   border-radius: 10px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   z-index: 2;
+   text-align: left;
+ }
+
+ .contact-section h2 {
+   font-weight: bold;
+   font-size: 2rem;
+ }
+
+ .contact-section .btn-contact {
+   float: right;
+   background-color: white;
+   color: black;
+   border-radius: 30px;
+   padding: 10px 25px;
+   font-weight: 500;
+ }
+
+ .footer {
+   background-color: #0f1420;
+   color: white;
+   padding: 150px 2rem 2rem;
+   position: relative;
+   z-index: 1;
+ }
+
+ .footer-logo {
+   width: 70px;
+   margin-bottom: 1rem;
+ }
+
+ .footer h5 {
+   font-weight: bold;
+   margin-bottom: 1rem;
+ }
+
+ .footer ul {
+   list-style: none;
+   padding: 0;
+ }
+
+ .footer ul li a {
+   color: #ccc;
+   text-decoration: none;
+ }
+ .footer ul li a:hover{
+  color: var(--col-primary);
+ }
+
+ .footer .newsletter-input {
+   border-radius: 30px;
+   padding: 8px 15px;
+   width: 100%;
+   max-width: 250px;
+   margin-bottom: 1rem;
+ }
+
+ .social-icons a {
+   color: white;
+   margin-right: 10px;
+   font-size: 1.2rem;
+   transition: color 0.3s;
+ }
+
+ .social-icons a:hover {
+   color: var(--col-primary);
+ }
+
+ .footer-bottom {
+   text-align: center;
+   padding-top: 1rem;
+   font-size: 0.9rem;
+   color: #aaa;
+   border-top: 1px solid #333;
+   margin-top: 1rem;
+ }
+
+ /* Responsive adjustments */
+
+ @media (max-width: 767.98px) {
+   .navbar-brand {
+     width: 140px;
+     left: 0.75rem;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .testimonials-section h2 {
+     font-size: 2.2rem;
+   }
+
+   .testimonial-pfp-container {
+     gap: 5px;
+   }
+
+   .testimonial-pfp {
+     width: 45px;
+     height: 45px;
+   }
+
+   .testimonial-pfp.active {
+     width: 70px;
+     height: 70px;
+   }
+
+   .carousel-control-prev,
+   .carousel-control-next {
+     display: none;
+    
+   }
+ }
